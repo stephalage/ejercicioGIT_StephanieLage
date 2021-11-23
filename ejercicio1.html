@@ -1,0 +1,28 @@
+<script>
+
+    var numeroDeElementos = 13;
+    
+    var fibonacci = [0,1];
+    
+    for (let i = 1; i < numeroDeElementos; i++)
+    {
+    
+        var cantidad = fibonacci.length;
+        var generaElemento = fibonacci[cantidad-1] + fibonacci [cantidad-2];
+        
+        if (numeroDeElementos != fibonacci.length)
+        {
+            fibonacci.push(generaElemento);
+        }
+       
+        //if(generaElemento == numeroDeElementos)
+        //{
+          //  break;
+        //}
+    
+    }
+    
+    console.log(fibonacci);
+    
+    
+    </script>
