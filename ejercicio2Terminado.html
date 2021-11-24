@@ -1,0 +1,39 @@
+<script>
+inicio = [40,"unacadena",true,0,9,1,10,500,10,true];
+
+resultadoFinal = [];
+resultadoOrdenado = [];
+
+for(let i = 0; i < inicio.length; i++)
+{
+    if (typeof inicio[i] == "number")
+    {
+        resultadoFinal.push(inicio[i]);
+    }
+}
+
+console.log(resultadoFinal);
+
+
+for(let v=0; v<resultadoFinal.length; v++)
+{
+
+    for(let v=0; v<resultadoFinal.length; v++)
+    {
+
+        if (resultadoFinal[v] > resultadoFinal[v+1])
+        {
+            valor1 = resultadoFinal[v];
+            valor2 = resultadoFinal[v+1];
+            
+            resultadoFinal[v] = valor2;
+            resultadoFinal[v+1] = valor1;
+        }
+
+    }
+
+}
+
+console.log(resultadoFinal);
+
+</script>
