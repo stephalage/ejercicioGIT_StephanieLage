@@ -1,0 +1,194 @@
+<script>
+
+// Ejercicio 1
+
+var numero1 = 5;
+var numero2 = 8;
+
+    if(numero1 < numero2) {
+    console.log("numero1 no es mayor que numero2");
+    }
+    if(numero2 > 0) {
+    console.log("numero2 es positivo");
+    }
+    if(numero1-6 < 0) {
+    console.log("numero1 es negativo o distinto de cero");
+    }
+    if(numero1+1 < numero2) {
+    console.log("Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2");
+    }
+
+
+// Ejercicio 2
+
+var ejercicio2 = "10";
+var resultadoFinal2 =ejercicio2;
+var resultadotemporal;
+
+for (i=1; i < ejercicio2; i++)
+{
+
+    resultadoFinal2 = resultadoFinal2 * i;
+
+}
+
+console.log(resultadoFinal2);
+
+
+
+// Ejercicio 3 
+
+var ejercicio3 = "22";
+
+var residuo = ejercicio3%2;
+
+    if (residuo == 0)
+    {
+        console.log("Es un número par");
+    }else
+    {
+        console.log("Es un número impar");
+    }
+
+
+// Ejercicio 4
+
+
+
+// Ejercicio 5
+
+class Persona{
+
+    nombre;
+    edad;
+    constructor(nombre, edad) {
+       this.nombre = nombre;
+       this.edad = edad;
+    }
+
+    obtDetalles(nombre,edad)
+    {
+        console.log(nombre);
+        console.log(edad);
+    }
+
+}
+
+class Estudiante extends Persona {
+
+    calificacion;
+
+    constructor(nombre, edad) {
+       super(nombre,edad);
+       this.calificacion = 0;
+    }
+
+    obtDetalles(nombre,edad)
+    {
+        console.log(nombre);
+        console.log(edad);
+        console.log(calificacion);
+    }
+
+}
+
+
+class Profesor extends Persona{
+
+    asignatura;
+    nivel;
+
+    constructor(nombre, edad, asignatura="JS", nivel="básico") {
+       super(nombre,edad);
+       this.asignatura = asignatura;
+       this.nivel = nivel;
+    }
+
+    obtDetalles(nombre,edad,asignatura,nivel)
+    {
+        console.log(nombre);
+        console.log(edad);
+        console.log(asignatura);
+        console.log(nivel);
+    }
+
+
+}
+
+class Grupo extends Persona{
+
+    profesor;
+    promedio;
+    estudiantes = [];
+
+    constructor(nombre,edad){
+        super(nombre, edad);
+
+        this.estudiantes = [];
+        this.profesor = 0; 
+    }
+
+
+    calificar(){
+
+
+    }
+
+    CrearEstudiante(estudiante)
+    {
+        this.estudiantes.push(estudiante);
+        
+        console.log(estudiantes);
+    }
+
+    
+
+}
+
+/*
+const estudiante = new Persona();
+estudiante.obtDetalles("Pedro","25");
+
+const est = new Grupo();
+est.CrearEstudiante("Pedro 25 años");
+
+*/
+
+
+// Ejercicio 6
+
+var input = "casa";
+
+
+for (i=1; i <= input.length; i++)
+{
+
+    let b = 0;
+    for (i=0; i < input.length; i++)
+    {
+        
+        input[i];
+
+        console.log(input[b]+input[i+1]);
+
+       console.log(input[i]+input.substring(input[i+1],input[input.length]));
+
+
+        console.log(input[i]);
+
+    }    
+
+    b= b+1;
+
+}
+
+
+
+
+
+
+
+
+
+
+</script>
